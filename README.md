@@ -16,25 +16,29 @@ Each **Account** contains two types of **Credits**, **TypeA** and **TypeB**
 
 - Client can create an Account
 - Client can delete an Account
-- Client can deposit an amount of any type of credits into an Account.
-- Client can withdraw an amount of any type of credit from Account
-- Client can set credit value of any type of credit an account
-- Each of the above action should result in a transaction history being created
-- Credits should not have negative value, attempts to withdraw more than the account has should result in error messages showing up
-- Clients should be able to view transaction histories of an **Account**
+- Client can deposit an amount to a credit type in an account
+- Client can withdraw an amount from a credit type in an account
+- Client can set credit value of a credit type in an account
+- Each of the above actions should result in a transaction history being created
+- Account should not have negative credit value. Attempts to withdraw more than the account has
+or attempts to set the value of the account to negative value should result in error messages showing up
+- Client can view transaction histories of an **Account**
 *( feel free to either paginate the result or use infinite scroll )*
 
-**NOTE:** Client here means a physical user, you should not worry about Authentication/Authorisation or User Model, any one has access to this application should have access to all features mentioned above.
+**NOTE:**
+- Client here means a physical user, you should not worry about Authentication/Authorisation or User Model, any one has access to this application should have access to all features mentioned above.
+- If you have extra time, please add some samples tests to demonstrate different kind of test cases. (If you practice TDD or BDD feel free to do so)
+Test coverage is not the main concern of this challenge
 
-**Additional Requirement:** Please manually add a delay/timeout(1 second) to the deposit/withdraw/set logic in the back-end.
+**Additional Requirement:** Please manually add delay/timeout(1 second) to deposit/withdraw/set logic in the back-end.
 
 
 ## Technology choices
 ### Front-end
 In the **transaction_history_ui** directory, a react-redux based template app is in place for you.
-Redux and Redux-saga are not mandatory, feel free to use a  purely hook-based solution.
-Feel free to pull in any libraries to achieve your Goal.
-For Styling, please stick with CSS module for simplicity.
+Redux and Redux-saga are not mandatory, feel free to use a pure hook-based solution if you'd like to not use Redux and Redux-saga.
+Feel free to pull in any libraries to help you achieve your Goal.
+For Styling, please stick to CSS module for simplicity.
 
 ### Back-end
 In the **transaction_history_backend** directory a Flask Hello-world app is setup for you.
