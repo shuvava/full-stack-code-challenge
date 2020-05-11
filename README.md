@@ -1,16 +1,16 @@
 # Virgil Full-stack Code Challenge
 
 ## Goal
-The goal of this challenge is to help candidates to demonstrate their understanding of common practices in full-stack software development.
+The goal of this challenge is for candidates to demonstrate their understanding of common practices in full-stack software development.
 
 ## What are we looking for?
-- Candidate's ability to handle basic dev environment tools
-- Candidate's ability to write React based UI Application
-- Candidate's ability to design Restful API
-- Candidate's ability to handle data manipulation
+- Ability to handle basic dev environment tools
+- Ability to write React based UI Application
+- Ability to design Restful API
+- Ability to handle data manipulation
 
 ## Challenge
-Write an application with a UI (React) and Back-end(Flask).
+Write an application with a UI (React) and Back-end (Flask).
 This app should display a list of **Account**
 Each **Account** contains two types of **Credits**, **TypeA** and **TypeB**
 
@@ -26,24 +26,23 @@ or attempts to set the value of the account to negative value should result in e
 *( feel free to either paginate the result or use infinite scroll )*
 
 **NOTE:**
-- Client here means a physical user, you should not worry about Authentication/Authorisation or User Model, any one has access to this application should have access to all features mentioned above.
-- If you have extra time, please add some samples tests to demonstrate different kind of test cases. (If you practice TDD or BDD feel free to do so)
-Test coverage is not the main concern of this challenge
+- Client here means a physical user, so do not worry about Authentication/Authorization or a User Model; any one who has access to this application should have access to all features mentioned above.
+- Bonus points for adding test coverage to demonstrate different kind of test cases (e.g., TDD or BDD); however, test coverage is not the main concern of this challenge.
 
-**Additional Requirement:** Please manually add delay/timeout(1 second) to deposit/withdraw/set logic in the back-end.
+**Additional Requirement:** Please manually add delay/timeout (1 second) to deposit/withdraw/set logic in the back-end.
 
 
 ## Technology choices
 ### Front-end
 In the **transaction_history_ui** directory, a react-redux based template app is in place for you.
-Redux and Redux-saga are not mandatory, feel free to use a pure hook-based solution if you'd like to not use Redux and Redux-saga.
+Redux and Redux-saga are not mandatory, feel free to use a pure hook-based solution if you prefer not use Redux and Redux-saga.
 Feel free to pull in any libraries to help you achieve your Goal.
 For Styling, please stick to CSS module for simplicity.
 
 ### Back-end
 In the **transaction_history_backend** directory a Flask Hello-world app is setup for you.
 Please feel free to use the framework of your choice to make the back-end.
-Please manage your Python packages with Pipenv.
+Please manage your Python packages with `pipenv`.
 Feel free to pull in additional libraries to help you finish the challenge.
 
 ### Database
@@ -54,7 +53,7 @@ Please write a docker-compose file, and a Dockerfile for each app.
 
 
 ## Deliverable
-- Candidate should create a repository on github containing both services.
-- Some seed data should be populated
-- **docker-compose up** should be sufficient to spin up the stack
+- Create a repository on github containing both services.
+- Include seed data to populate the application.
+- `docker-compose up` should be sufficient to spin up the stack
 - Web interface should be accessible at localhost:3000
