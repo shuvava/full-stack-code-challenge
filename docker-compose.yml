@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+    db:
+        container_name: hcareers_challenge_db
+        ports:
+            - "5431:5432"
+        image: postgres
+        volumes:
+            - hc_api_db_data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: flask_user
+            POSTGRES_PASSWORD: flask_password
+            POSTGRES_DB: challenge
+
+volumes:
+    hc_api_db_data: {}
